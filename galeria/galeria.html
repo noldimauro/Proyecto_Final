@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/styles.css">
     
     <!-- Tipografias importadas de fonts.google.com -->
         <!-- inter/cormorant-infant/roboto -->
@@ -14,15 +14,18 @@
     
     <!-- CDN DE FONT AWESOME -->
     <link rel="stylesheet" type="text/css" href="../librerias/fontawesome-free-6.2.0-web/css/all.css">
+    
+    <!-- cdn de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Galeria</title>
 </head>
 <body>
-    <header class="contenedor_header"><!-- caja contenedora de la cabecera --> 
+    <header class="contenedor_header"> <!--caja contenedora de la cabecera-->  
         <div class="logo_tienda">
-            <img src="../imagenes/Logo/Logo_Rolfi_Antigüedades-_300x132px_sinfondo.png" alt="imagen del Logo"><!-- Logo en la cabecera -->
+            <img src="../imagenes/Logo/Logo_Rolfi_Antigüedades-_300x132px_sinfondo.png" alt="imagen del Logo"><!-- Logo en la cabecera --> 
         </div>
         <div class="caja_barraNav">
-            <nav> <!-- barra de navegación -->
+            <nav> <!--barra de navegación--> 
                 <ul>
                     <li><a href="../index.html">Inicio</a></li> 
                     <li><a href="../quienes_somos/quienes_somos.html">Quienes Somos</a></li>
@@ -33,81 +36,89 @@
             </nav>
         </div>
     </header>
-    <article class="galeria_padre"> <!-- contenedor padre-->
-        <div class="titulo_Gal">
-            <h1><strong> Galería </strong></h1>
-        </div>
+    <main>
+        <div class="container-fluid"> <!-- contenedor padre-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1><strong> Galería </strong></h1>
+                </div>
 
-        <div class="carteles">
-            <img src="../imagenes/piezas/letreros/cartel2(height 250px).jpg" alt="cartel antiguo te Tigre">
-            <span><br>Carteles enlosados</span>
-        </div>
-        <div class="cristal">
-            <img src="../imagenes/piezas/cristaleria/cristal5(height 250px).jpg" alt="sifones antiguos">
-            <span><br>Cristalería</span>
-        </div>
-        <div class="cuchillos">
-            <img src="../imagenes/piezas/cuchillos/cuchillos1(height 250px).jpg" alt="lote de cuchillos antiguos">
-            <span><br>Platería criolla</span>
-        </div>
-        <div class="campo">
-            <img src="../imagenes/piezas/campo/campo1(height 250px).jpg" alt="ruedas de carro">
-            <span><br>Estilo Campo</span>
-        </div>
-        <div class="muebles">
-            <img src="../imagenes/piezas/muebles/vitrina (height 250px).jpg" alt="muebles antiguos">
-            <span><br>Vitrinas y cristaleros</span>
-        </div>
-        <div class="miscelanea">
-            <img src="../imagenes/piezas/objetos-varios/miscelanea4(height 250px).jpg" alt="objetos varios">
-            <span><br>Miscelánea</span>
-        </div>
-        <div class="bar">
-            <img src="../imagenes/piezas/bar/bar1(514x300px).jpg" alt="el bar de Rolfi">
-            <span><br>Artículos de Bares y pulperías</span>
-        </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="../imagenes/piezas/letreros/cartel2(height 250px).jpg" alt="cartel antiguo">
+                    <span><br>Carteles enlosados</span>
+                </div>
+            
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="../imagenes/piezas/cristaleria/cristal5(height 250px).jpg" alt="sifones antiguos">
+                    <span><br>Cristalería</span>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="../imagenes/piezas/cuchillos/cuchillos1(height 250px).jpg" alt="lote de cuchillos antiguos">
+                    <span><br>Platería criolla</span>
+                </div>
+            
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="../imagenes/piezas/campo/campo1(height 250px).jpg" alt="ruedas de carro">
+                    <span><br>Estilo Campo</span>
+                </div>
+            
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="../imagenes/piezas/bar/../bar/bar1(height 250px).jpg" alt="el bar de Rolfi">
+                    <span><br>Artículos de Bares y pulperías</span>
+                </div>
 
+                <!--<div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="../imagenes/piezas/compras01.jpg" alt="objetos-varios">
+                    <span><br>Objetos varios</span>
+                </div>-->
+            </div>    
+        </div>
+    </main>        
+    <footer>    
+        <!-- Posicionamiento con Bootstrap grid--> 
+        <div class="container text-center">
 
-    </article>
-
-    <footer> <!-- Pie de página-->
-        <div id="container_footer">
-            <h3>Mapa de ubicación</h3>
-            <div class="div__googleMap">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27253.799493607046!2d-58.02985761062853!3d-31.36656882196342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95adc29d50eaac19%3A0x3871c23c97684453!2sSan%20Juan%202445%2C%20E3200BCE%20Concordia%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1664074374721!5m2!1ses-419!2sar" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-                <div class="pie__nuestrosProductos">
-                    <h3>Nuestros Productos</h3><br>
-                       
+            <div class="row">
+                <!-- columna 1 del footer-->
+                <div class="col-lg-4"  style="">
+                    <!--Mapa de ubicación -->
+                    <h2> Ubicación </h2><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27253.799493607046!2d-58.02985761062853!3d-31.36656882196342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95adc29d50eaac19%3A0x3871c23c97684453!2sSan%20Juan%202445%2C%20E3200BCE%20Concordia%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1664074374721!5m2!1ses-419!2sar" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p></p>
+                </div>
+          
+                <!--columna 2 del footer--> 
+                <div class="col-lg-4"  style="">
+                    <h2> Nuestros Productos</h2><br>           
                     <p>Cristalería <br><br>
-                        Carteles de publicidad <br><br>
-                        Artículos de iluminación <br><br>
-                        Vitrinas y cristaleros <br><br>
-                        Platería criolla <br><br>
-                        Objetos de campo <br><br>
-                        Artículos de bares y pulperías </p>
+                    Carteles de publicidad <br><br>
+                    Artículos de iluminación <br><br>
+                    Vitrinas y cristaleros <br><br>
+                    Platería criolla <br><br>
+                    Objetos de campo <br><br>
+                    Artículos de bares y pulperías </p>
+                    <p></p>
                 </div>
-                <div class="div__contactos">
-                    <h3><strong> Contactos</strong></h3><br><br>
+          
+                <!-- columna 3 del footer-->
+                <div class="col-lg-4"  style="">
+                    <h2> Contactos</h2><br>
                     <i class="fa-solid fa-phone"></i>
-                        <span>
-                            345 4044322
-                        </span>
-                    <br><br><br>
-                    
-                    <i class="fa-solid fa-envelope"></i>
-                        <span>
-                            rolfimauro@hotmail.com
-                        </span>
-                    <br><br><br>
-                    
+                    <span>
+                        345 4044322
+                    </span> <br><br>
+                        <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        rolfimauro@hotmail.com
+                    </span> <br><br>
                     <i class="fa-solid fa-location-dot"></i>  
-                        <span>
-                            San Juan 2445, Concordia (Entre Ríos)
-                        </span>
-                    <br><br><br>
-                    
+                    <span>
+                        San Juan 2445, Concordia (Entre Ríos)
+                    </span> <br>
+                    <p></p>
                 </div>
+            </div>
         </div>
     </footer>
     
